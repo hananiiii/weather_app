@@ -4,7 +4,6 @@ import Rain from '../Assets/rain.png'
 import Sun from '../Assets/sun.png'
 import Cloud from '../Assets/could.png'
 import Snow from '../Assets/snow.png'
-import Drizzle from '../Assets/drizzeljpeg.jpeg'
 
 
 const WeatherApp = () => {
@@ -36,7 +35,7 @@ const WeatherApp = () => {
 
         if(data.weather[0].icon==="03d" || data.weather[0].icon==="03n")
         {
-            setWicon(Drizzle)
+            setWicon(Cloud)
         }
         else  if(data.weather[0].icon==="02d" || data.weather[0].icon==="02n")
         {
@@ -48,7 +47,7 @@ const WeatherApp = () => {
         }
         else  if(data.weather[0].icon==="04d" || data.weather[0].icon==="04n")
         {
-            setWicon(Drizzle)
+            setWicon(Sun)
         }
         else  if(data.weather[0].icon==="09d" || data.weather[0].icon==="09n")
         {
